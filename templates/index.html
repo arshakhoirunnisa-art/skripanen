@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Prediksi Python</title>
+    <style>
+        body {
+            background-color: transparent !important;
+            color: #ffffff !important;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #ffffff;
+        }
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #333;
+            background-color: #252525;
+            color: #ffffff;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        .btn-hitung {
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+        .btn-hitung:hover {
+            background-color: #45a049;
+        }
+        .hasil-box {
+            margin-top: 25px; 
+            padding: 20px; 
+            background-color: #1a1a1a; 
+            border-radius: 8px; 
+            border: 1px solid #2d2d2d;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/" method="POST">
+        
+        <div class="form-group">
+            <label for="tanaman">Pilih Jenis Tanaman:</label>
+            <select name="tanaman" id="tanaman">
+                <option value="Jagung" {% if tanaman == 'Jagung' %}selected{% endif %}>🌽 Jagung</option>
+                <option value="Singkong" {% if tanaman == 'Singkong' %}selected{% endif %}>🍠 Singkong</option>
+                <option value="Ubi Merah" {% if tanaman == 'Ubi Merah' %}selected{% endif %}>🍠 Ubi Merah</option>
+                <option value="Ubi Ungu" {% if tanaman == 'Ubi Ungu' %}selected{% endif %}>😈 Ubi Ungu</option>
+                <option value="Ubi Putih" {% if tanaman == 'Ubi Putih' %}selected{% endif %}>🥔 Ubi Putih</option>
+                <option value="Bengkoang" {% if tanaman == 'Bengkoang' %}selected{% endif %}>🌱 Bengkoang</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="luas">Pilih Lokasi & Luas Lahan:</label>
+            <select name="luas" id="luas">
+                <option value="600">Sawah Pribadi (600 m²)</option>
+                <option value="900">Sawah Hak Pakai (900 m²)</option>
+                <option value="1500">Sawah Gadai (1500 m²)</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn-hitung">Hitung Estimasi Hasil</button>
+    </form>
+
+    {% if berat and uang %}
+    <div class="hasil-box">
+        <h3 style="color: #4caf50; margin-top: 0; margin-bottom: 5px;">🔮 Hasil Prediksi Periode Tanam Selanjutnya</h3>
+        <p style="color: #888888; font-size: 13px; margin-top: 0; margin-bottom: 15px;">Kategori Lahan: {{ lahan }}</p>
+        
+        <p style="font-size: 16px; margin: 10px 0; color: #ffffff;">
+            📦 Estimasi Total Produksi: <strong style="color: #ffeb3b; font-size: 18px;">{{ berat }} KG</strong> {{ tanaman }}
+        </p>
+        <p style="font-size: 16px; margin: 10px 0; color: #ffffff;">
+            💰 Estimasi Keuntungan Finansial: <strong style="color: #2196f3; font-size: 18px;">Rp {{ uang }}</strong>
+        </p>
+        
+        <hr style="border: 0; border-top: 1px solid #2d2d2d; margin: 15px 0;">
+        <small style="color: #666666; display: block; line-height: 1.4;">
+            *Catatan: Hasil di atas adalah estimasi untuk <strong>1 Periode Tanam (Musim Selanjutnya)</strong> yang dihitung menggunakan Metode Regresi Linier Terintegrasi.
+        </small>
+    </div>
+    {% endif %}
+
+</body>
+</html>

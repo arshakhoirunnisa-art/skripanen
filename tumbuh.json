@@ -1,0 +1,74 @@
+[
+    {
+        "icon": "\ud83c\udf3d",
+        "tanaman": "Jagung",
+        "lahan": "Sawah Hak Pakai (900 m\u00b2)",
+        "tahap": "Proses Tumbuh - Sudah di pacul",
+        "hari_jalan": 64,
+        "hari_total": 90,
+        "persentase": 71,
+        "sisa_hari": 26,
+        "warna_border": "#2ecc71",
+        "tanggal_input": "2026-05-28"
+    },
+    {
+        "icon": "\ud83e\udd54",
+        "tanaman": "Ubi Putih",
+        "lahan": "Sawah Hak Pakai (900 m\u00b2)",
+        "tahap": "Proses Tumbuh",
+        "hari_jalan": 64,
+        "hari_total": 120,
+        "persentase": 53,
+        "sisa_hari": 56,
+        "warna_border": "#f1c40f",
+        "tanggal_input": "2026-05-28"
+    },
+    {
+        "icon": "\ud83e\udd5c",
+        "tanaman": "Kacang",
+        "lahan": "Sawah Hak Pakai (900 m\u00b2)",
+        "tahap": "Proses Tumbuh",
+        "hari_jalan": 64,
+        "hari_total": 90,
+        "persentase": 71,
+        "sisa_hari": 26,
+        "warna_border": "#a3cb38",
+        "tanggal_input": "2026-05-28"
+    },
+    {
+        "icon": "\ud83c\udf60",
+        "tanaman": "Ubi Merah",
+        "lahan": "Sawah Pribadi (600 m\u00b2)",
+        "tahap": "Proses Tumbuh",
+        "hari_jalan": 89,
+        "hari_total": 120,
+        "persentase": 74,
+        "sisa_hari": 31,
+        "warna_border": "#e74c3c",
+        "tanggal_input": "2026-05-28"
+    },
+    {
+        "icon": "\ud83e\udd5c",
+        "tanaman": "Kacang",
+        "lahan": "Sawah Gadai (1500 m\u00b2)",
+        "tahap": "Proses Tumbuh",
+        "hari_jalan": 67,
+        "hari_total": 90,
+        "persentase": 74,
+        "sisa_hari": 23,
+        "warna_border": "#a3cb38",
+        "tanggal_input": "2026-05-28"
+    },
+    {
+        "icon": "\ud83e\uddc6",
+        "tanaman": "Kacang Bogor",
+        "lahan": "Sawah Gadai (1500 m\u00b2)",
+        "tahap": "Proses Tumbuh",
+        "hari_jalan": 67,
+        "hari_total": 120,
+        "persentase": 56,
+        "sisa_hari": 53,
+        "warna_border": "#f39c12",
+        "tanggal_input": "2026-05-28"
+    }
+]

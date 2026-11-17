@@ -1,0 +1,16 @@
+<mxfile host="Electron">
+  <diagram name="Halaman-1" id="GnyPrfvxjUKRJxKnE5R2">
+    <mxGraphModel dx="860" dy="529" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e9QwzttGHn2CoMkGKbYQ-1" parent="1" style="swimlane;" value="Sistem" vertex="1">
+          <mxGeometry height="438" width="188" x="419" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="e9QwzttGHn2CoMkGKbYQ-2" parent="1" style="swimlane;" value="Admin" vertex="1">
+          <mxGeometry height="438" width="181" x="238" y="78" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

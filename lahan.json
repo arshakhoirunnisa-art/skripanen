@@ -1,0 +1,23 @@
+[
+    {
+        "id_lahan": "L001",
+        "nama_lahan": "Sawah Utama (Pribadi)",
+        "status": "Milik Sendiri",
+        "luas_lahan": "600 m²",
+        "keterangan": "Full kepemilikan keluarga"
+    },
+    {
+        "id_lahan": "L002",
+        "nama_lahan": "Sawah Sarmat",
+        "status": "Gadai",
+        "luas_lahan": "1500 m²",
+        "keterangan": "Hak kelola selama masa gadai"
+    },
+    {
+        "id_lahan": "L003",
+        "nama_lahan": "Sawah Mas Dani",
+        "status": "Hak Pakai / Titipan",
+        "luas_lahan": "900 m²",
+        "keterangan": "Diizinkan kelola penuh oleh pemilik"
+    }
+]
